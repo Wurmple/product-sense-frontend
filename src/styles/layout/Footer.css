@@ -1,0 +1,52 @@
+.footer {
+    background-color: #BACD92; /* Matches your preference */
+    color: #333; /* Darker contrasting text color */
+    padding: 0.5rem 0; /* Top and bottom padding */
+    border-top: 1px solid black;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+    max-width: 1024px; /* Set a maximum container width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  .footer-info,
+  .social-links,
+  .copyright {
+    flex: 1; /* Distribute content evenly */
+    text-align: center; /* Center content within each section */
+  }
+  
+  .footer-info p {
+    margin-bottom: 0.5rem; /* Add some space between paragraphs */
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Spacing between social media icons */
+  }
+  
+  .social-links a {
+    color: inherit; /* Inherit text color from footer */
+    font-size: 1.2rem; /* Adjust icon size as needed */
+  }
+  
+  .social-links a:hover {
+    color: #000; /* Darken the icon on hover */
+  }
+  
+  .copyright {
+    margin-top: 1rem; /* Add space above copyright */
+    font-size: 0.8rem; /* Adjust copyright text size */
+  }
+  
+  /* Font Awesome Icon library (replace with your preferred icons) */
+  .fa {
+    font-family: FontAwesome; /* Replace with your actual Font Awesome library reference */
+  }
+  
