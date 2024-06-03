@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/layout/Navbar.css";
 
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
+import LoginModal from "./LoginModal";
+import RegistrationModal from "./RegistrationModal";
+
 const Navbar = () => {
+  const [loginModalOpen, setLoginModalOpen] = useState(false);
+  const onOpenLoginModal = () => setLoginModalOpen(true);
+  const onCloseLoginModal = () => setLoginModalOpen(false);
+
+  const [registrationModalOpen, setRegistrationModalOpen] = useState(false);
+  const onOpenRegistrationModal = () => setRegistrationModalOpen(true);
+  const onCloseRegistrationModal = () => setRegistrationModalOpen(false);
+
   return (
     <div className="navbar">
       {/* Logo */}
@@ -18,8 +31,14 @@ const Navbar = () => {
       </div>
       {/* Action buttons */}
       <div className="actions">
-        <button>Sign In</button>
-        <button>Sign Up</button>
+        <button onClick={onOpenLoginModal}>Sign In</button>
+        <Modal open={loginModalOpen} onClose={onCloseLoginModal}>
+          <LoginModal />
+        </Modal>
+        <button onClick={onOpenRegistrationModal}>Sign Up</button>
+        <Modal open={registrationModalOpen} onClose={onCloseRegistrationModal}>
+          <RegistrationModal />
+        </Modal>
       </div>
       {/* User section (optional) */}
       <div className="user">
@@ -33,7 +52,7 @@ const Navbar = () => {
           100
         </div>
         <div className="profile-picture">
-          <img src="/assets/shyamp.jpg" alt="Profile Picture" />
+          <img src="/assets/shyamp.jpg" alt="user" />
         </div>
       </div>
     </div>
