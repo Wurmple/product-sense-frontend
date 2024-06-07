@@ -42,7 +42,7 @@ function App() {
               <Route path="/admin/dashboard" element={<AdminDashboard />} />
             </Routes>
           </div>
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </Router>
     </div>
