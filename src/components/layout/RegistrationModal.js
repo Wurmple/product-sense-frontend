@@ -11,9 +11,6 @@ const RegistrationModal = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Replace with your actual registration logic
-    // This example just checks if all fields are filled and passwords match
-
     if (!name || !email || !password || !confirmPassword) {
       setErrorMessage("Please fill in all fields");
       return;
