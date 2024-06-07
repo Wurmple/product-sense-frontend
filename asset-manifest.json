@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/product-sense-frontend/static/css/main.00060907.css",
-    "main.js": "/product-sense-frontend/static/js/main.128629dc.js",
+    "main.js": "/product-sense-frontend/static/js/main.68b7259f.js",
     "index.html": "/product-sense-frontend/index.html",
     "main.00060907.css.map": "/product-sense-frontend/static/css/main.00060907.css.map",
-    "main.128629dc.js.map": "/product-sense-frontend/static/js/main.128629dc.js.map"
+    "main.68b7259f.js.map": "/product-sense-frontend/static/js/main.68b7259f.js.map"
   },
   "entrypoints": [
     "static/css/main.00060907.css",
-    "static/js/main.128629dc.js"
+    "static/js/main.68b7259f.js"
   ]
 }
