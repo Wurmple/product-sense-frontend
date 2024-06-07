@@ -52,7 +52,11 @@ const Navbar = () => {
           100
         </div>
         <div className="profile-picture">
-          <img src="/assets/shyamp.jpg" alt="user" />
+          {/* <img src="/assets/shyamp.jpg" alt="shyam" /> */}
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/shyamp.jpg`}
+            alt="Shyam"
+          />
         </div>
       </div>
     </div>
