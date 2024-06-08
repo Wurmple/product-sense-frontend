@@ -27,7 +27,7 @@ function App() {
           <Sidebar />
         </div>
         <div className="main-content">
-          {/* <Navbar /> */}
+          <Navbar />
           <div className="content">
             <Routes>
               <Route path="/" element={<HomePage />} />

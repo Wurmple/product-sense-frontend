@@ -24,6 +24,9 @@
   .footer-info p {
     margin-bottom: 0.5rem; /* Add some space between paragraphs */
   }
+  .footer-info a {
+    text-decoration: none;
+  }
   
   .social-links {
     display: flex;
